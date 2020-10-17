@@ -395,6 +395,13 @@
               </li>
             </ul>
           </div>
+          <div class="form-wraper">
+            <h3 class="sub-us">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+            <form action="#" method="GET" class="subscribe-form">
+              <input type="email" class="subscribe-form-input" placeholder="E-mail">
+              <button type="submit" class="subscribe-button iconsend">Подписаться</button>
+            </form>
+          </div>
         </address>
       </div>
     </footer>
@@ -405,8 +412,43 @@
             <use href="./svg/symbol-defs.svg#close-black">
             </use>
           </svg>
-
         </button>
+        <h2 class="form-title">Оставте свои данные, мы вам перезвоним</h2>
+        <form action="#" method="GET" class="information-form">
+          <div class="information-field-wrapper">
+            <label class="form-field">Имя
+              <input type="text" name="user-name" class="information-input" minlength="2" required>
+              <svg width="13" height="13" class="form-icon">
+                <use href="./svg#name"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="information-field-wrapper">
+            <label class="form-field">Телефон
+              <input type="tel" name="user-phone" class="information-input" required>
+              <svg width="13" height="13" class="form-icon">
+                <use href="./svg/#telephone.svg"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="information-field-wrapper">
+            <label class="form-field">Почта
+              <input type="email" name="user-email" class="information-input">
+              <svg width="15" height="12" class="form-icon">
+                <use href="./svg/#email.svg"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="class">
+            <label class="form-field">Комментарий
+              <textarea class="form-message" name="user-message" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+          <input type="checkbox" name="user-policy" value="accept-policy" class="form-policy" >
+          <button type="submit" class="information-form-btn" >Отправить</button>
+          
+
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
